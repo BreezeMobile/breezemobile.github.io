@@ -1,2 +1,2 @@
-# breezemobile.github.io
-Breeze Mobile website
+# Breeze Mobile
+A truly free mobile carrier.
