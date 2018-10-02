@@ -5,23 +5,16 @@
     <title>{{ page.title }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <link href="bootstrap.css" rel="stylesheet">
-    <link href="royal.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="bootstrap.js"></script>
-  	<script src="npm.js"></script>
-  	<script src="https://use.fontawesome.com/a2f6d19e58.js"></script>
   </head>
   <body style="padding-top: 50px;">
     {% include navigation.html %}
 
-    <div style="text-align: center; background-color: #141414">
+    <div style="text-align: center;">
       {{ content }}
     </div>
-    
+
   </body>
-  <footer style="padding-top: 10px; padding-bottom: 10px; background-color: #141414; width:100%;">
+  <footer style="padding-top: 10px; padding-bottom: 10px; width:100%;">
 		{% include footer.html %}
 	</footer>
 </html>
