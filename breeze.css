@@ -1,0 +1,16 @@
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+.navcontainer
+{
+    display: flex;
+    justify-content: center;
+}
