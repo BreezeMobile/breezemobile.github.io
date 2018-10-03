@@ -1,6 +1,20 @@
 html
 {
-    font:lighter 11px Helvetica, Arial, sans-serif;
+    font: 12px Comfortaa;
+    margin-top: 0;
+}
+
+nav
+{
+    padding: 15px;
+    top: 0;
+    width: 100%
+}
+
+nav ul
+{
+    padding: 0;
+    list-style-type: none;
 }
 
 nav ul li
@@ -9,12 +23,6 @@ nav ul li
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-nav ul
-{
-    padding: 0;
-    list-style-type: none;
 }
 
 nav a
@@ -31,4 +39,25 @@ nav a:hover
 {
     justify-content: center;
     display: flex;
+}
+
+/* fonts */
+@font-face 
+{
+    font-family: Comfortaa;
+    src: url(fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face 
+{
+    font-family: Comfortaa;
+    src: url(fonts/Comfortaa-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face 
+{
+    font-family: Comfortaa;
+    src: url(fonts/Comfortaa-Light.ttf);
+    font-weight: lighter;
 }
