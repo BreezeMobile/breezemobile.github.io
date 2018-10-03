@@ -1,16 +1,34 @@
+html
+{
+    font:lighter 11px Helvetica, Arial, sans-serif;
+}
+
 nav ul li
 {
     list-style-type: none;
     display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul
+{
+    padding: 0;
+    list-style-type: none;
 }
 
 nav a
 {
     text-decoration: none;
+    color: grey
+}
+nav a:hover
+{
+    color: lightgray
 }
 
 .navcontainer
 {
-    display: flex;
     justify-content: center;
+    display: flex;
 }
