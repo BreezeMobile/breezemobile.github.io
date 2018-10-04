@@ -1,11 +1,11 @@
-﻿# Breeze Mobile
+# Breeze Mobile
 A truly free mobile carrier.
 
 # Collaborator information
 
 André-Marie Kabeya: student number: 300067899
 
-300060437
+Georges: 300060437
 
 Hamzah:300026560
 
