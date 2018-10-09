@@ -55,6 +55,24 @@ nav a:hover
     text-shadow: 2px 2px gray;
 }
 
+.horizontalcontainer
+{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+#midwidth
+{
+    max-width: 100%; 
+    width: 750px;
+}
+
+#fullwidth
+{
+    max-width: 100%;
+}
+
 /* fonts */
 @font-face 
 {
