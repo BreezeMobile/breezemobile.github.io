@@ -2,6 +2,7 @@ html
 {
     font: 12px Comfortaa;
     margin-top: 0;
+    background-color: #e7e7e7;
 }
 
 nav
@@ -58,19 +59,38 @@ nav a:hover
 .horizontalcontainer
 {
     position: relative;
+}
+
+.centerdiv
+{
     display: flex;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 #midwidth
 {
     max-width: 100%; 
-    width: 750px;
+    width: 1000px;
 }
 
 #fullwidth
 {
     max-width: 100%;
+}
+
+.promocell
+{
+    padding: 75px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    box-shadow: 0px 15px 5px 2px #888888;
 }
 
 /* fonts */
