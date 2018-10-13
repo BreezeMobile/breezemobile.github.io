@@ -99,13 +99,17 @@ nav a:hover
 .promocell:hover
 {
     height: auto;
-    width: auto;
+    width: 258;
     transform: scaleY(0.95) scaleX(0.95);
+    box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.05);
 }
 
 .promocell
 {
-    padding: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 272px;
+
     background-color: #f0f0f0;
     border-radius: 20px;
     margin-right: 10px;
@@ -117,8 +121,9 @@ nav a:hover
     box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.1);
 
     color: black;
+    text-decoration: none;
 
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* fonts */
