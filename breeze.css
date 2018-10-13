@@ -55,6 +55,10 @@ nav a:hover
     color: white;
     font-size: 8em;
     text-shadow: 2px 2px gray;
+
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none; 
 }
 
 .windmill
@@ -64,6 +68,10 @@ nav a:hover
     padding-bottom: 0;
     margin-bottom: 0;
     vertical-align: bottom;
+
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none; 
 }
 .horizontalcontainer
 {
