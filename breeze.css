@@ -2,6 +2,7 @@ html
 {
     font: 12px Comfortaa;
     margin-top: 0;
+    background-color: #e7e7e7;
 }
 
 nav
@@ -43,8 +44,9 @@ nav a:hover
 
 .header
 {
-    background-color: #dbe4e5;
-    background-image: url("data:image/svg+xml,%3Csvg width='320' height='320' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2392abac' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: #9afbff;
+    background-image: url("data:image/svg+xml,%3Csvg width='320' height='320' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236fcde1' fill-opacity='0.58' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    
     font-weight: bold;
 }
 
@@ -53,24 +55,75 @@ nav a:hover
     color: white;
     font-size: 8em;
     text-shadow: 2px 2px gray;
+
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none; 
 }
 
+.windmill
+{
+    max-width: 95%;
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+    vertical-align: bottom;
+
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none; 
+}
 .horizontalcontainer
 {
     position: relative;
-    display: flex;
-    margin: 0 auto;
 }
 
-#midwidth
+.centerdiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.midwidth
 {
     max-width: 100%; 
-    width: 750px;
+    width: 1000px;
 }
 
-#fullwidth
+.fullwidth
 {
     max-width: 100%;
+}
+
+.promocell:hover
+{
+    height: auto;
+    width: 258;
+    transform: scaleY(0.95) scaleX(0.95);
+    box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.05);
+}
+
+.promocell
+{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 272px;
+
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+
+    box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.1);
+
+    color: black;
+    text-decoration: none;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* fonts */
