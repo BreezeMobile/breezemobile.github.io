@@ -131,9 +131,20 @@ nav a:hover
     vertical-align: middle;
 }
 
-.promotext
+.promotextcell
+{
+    max-width: 400px;
+    padding: 15px;
+}
+
+.lefttext
 {
     text-align: left;
+}
+
+.righttext
+{
+    text-align: right;
 }
 
 /* fonts */
