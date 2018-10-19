@@ -90,6 +90,12 @@ nav a:hover
     justify-content: center;
 }
 
+.miniwidth
+{
+    max-width: 100%; 
+    width: 250px;
+}
+
 .midwidth
 {
     max-width: 100%; 
@@ -134,6 +140,11 @@ nav a:hover
     padding-top: 5px;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 .impressionable
 {
     background-color: #f0f0f0;
@@ -158,6 +169,11 @@ nav a:hover
 .aligntop
 {
     vertical-align: top;
+}
+
+.alignbase
+{
+    vertical-align: baseline;
 }
 
 .promotextcell
