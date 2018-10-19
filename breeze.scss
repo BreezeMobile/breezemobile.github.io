@@ -1,3 +1,6 @@
+---
+---
+
 html
 {
     font: 12px Comfortaa;
@@ -75,6 +78,8 @@ nav a:hover
 }
 .horizontalcontainer
 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -91,12 +96,18 @@ nav a:hover
     width: 1000px;
 }
 
+.mostwidth
+{
+    max-width: 100%; 
+    width: 1500px;
+}
+
 .fullwidth
 {
     max-width: 100%;
 }
 
-.promocell:hover
+.impressionable:hover
 {
     height: auto;
     width: 258;
@@ -106,14 +117,27 @@ nav a:hover
 
 .promocell
 {
+    @extend .impressionable;
+
     padding-top: 75px;
     padding-bottom: 75px;
     width: 272px;
+}
 
+.button
+{
+    @extend .impressionable;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.impressionable
+{
     background-color: #f0f0f0;
     border-radius: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 
     box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.1);
 
@@ -131,6 +155,11 @@ nav a:hover
     vertical-align: middle;
 }
 
+.aligntop
+{
+    vertical-align: top;
+}
+
 .promotextcell
 {
     max-width: 400px;
@@ -145,6 +174,11 @@ nav a:hover
 .righttext
 {
     text-align: right;
+}
+
+.spacing
+{
+    padding: 30px;
 }
 
 /* fonts */
