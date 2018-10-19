@@ -45,11 +45,24 @@ nav a:hover
     display: flex;
 }
 
-.header
+.landingheader
 {
+    @extend .header;
+
     background-color: #9afbff;
     background-image: url("data:image/svg+xml,%3Csvg width='320' height='320' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236fcde1' fill-opacity='0.58' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
-    
+}
+
+.styleguideheader
+{
+    @extend .header;
+
+    background-color: #d0a2fd;
+    background-image: url("data:image/svg+xml,%3Csvg width='320' height='320' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239600ff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.header
+{
     font-weight: bold;
 }
 
@@ -64,18 +77,34 @@ nav a:hover
     pointer-events: none; 
 }
 
+.headerimage
+{
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none; 
+}
+
+.pagekit
+{
+    @extend .headerimage;
+    vertical-align: middle;
+
+    max-width: 95%;
+    width: 250px;
+    padding-bottom: 75px;
+}
+
 .windmill
 {
+    @extend .headerimage;
+
     max-width: 95%;
 
     padding-bottom: 0;
     margin-bottom: 0;
     vertical-align: bottom;
-
-    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
-    user-select: none;
-    pointer-events: none; 
 }
+
 .horizontalcontainer
 {
     margin-top: 30px;
