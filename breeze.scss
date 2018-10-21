@@ -1,3 +1,6 @@
+---
+---
+
 html
 {
     font: 12px Comfortaa;
@@ -61,20 +64,38 @@ nav a:hover
     pointer-events: none; 
 }
 
+.headerimage
+{
+    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none; 
+}
+
+.pagekit
+{
+    @extend .headerimage;
+    vertical-align: middle;
+
+    max-width: 95%;
+    width: 250px;
+    padding-bottom: 75px;
+}
+
 .windmill
 {
+    @extend .headerimage;
+
     max-width: 95%;
 
     padding-bottom: 0;
     margin-bottom: 0;
     vertical-align: bottom;
-
-    -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
-    user-select: none;
-    pointer-events: none; 
 }
+
 .horizontalcontainer
 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -85,10 +106,22 @@ nav a:hover
     justify-content: center;
 }
 
+.miniwidth
+{
+    max-width: 100%; 
+    width: 250px;
+}
+
 .midwidth
 {
     max-width: 100%; 
     width: 1000px;
+}
+
+.mostwidth
+{
+    max-width: 100%; 
+    width: 1500px;
 }
 
 .fullwidth
@@ -96,7 +129,7 @@ nav a:hover
     max-width: 100%;
 }
 
-.promocell:hover
+.impressionable:hover
 {
     height: auto;
     width: 258;
@@ -106,14 +139,32 @@ nav a:hover
 
 .promocell
 {
+    @extend .impressionable;
+
     padding-top: 75px;
     padding-bottom: 75px;
     width: 272px;
+}
 
+.button
+{
+    @extend .impressionable;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.impressionable
+{
     background-color: #f0f0f0;
     border-radius: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 
     box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.1);
 
@@ -131,6 +182,16 @@ nav a:hover
     vertical-align: middle;
 }
 
+.aligntop
+{
+    vertical-align: top;
+}
+
+.alignbase
+{
+    vertical-align: baseline;
+}
+
 .promotextcell
 {
     max-width: 400px;
@@ -145,6 +206,11 @@ nav a:hover
 .righttext
 {
     text-align: right;
+}
+
+.spacing
+{
+    padding: 30px;
 }
 
 /* fonts */
