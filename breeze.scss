@@ -12,13 +12,15 @@ nav
 {
     padding: 15px;
     top: 0;
-    width: 90%
+    width: 90%;
+    overflow: hidden;
 }
 
 nav ul
 {
     padding: 0;
     list-style-type: none;
+    white-space: nowrap;
 }
 
 nav ul li
@@ -233,3 +235,31 @@ a
     src: url(fonts/Comfortaa-Light.ttf);
     font-weight: lighter;
 }
+
+/* screen size difference stuff for nav */
+.navcontainer .icon 
+{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navcontainer a:not(:first-child) {display: none;}
+    .navcontainer a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navcontainer.responsive {position: relative;}
+    .navcontainer.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navcontainer.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
