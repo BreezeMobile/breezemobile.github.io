@@ -1,6 +1,8 @@
 # Breeze Mobile
 A truly free mobile carrier.
 
+This repo does not advertise a real product, but is rather part of a school project.
+
 # Collaborator information
 
 André-Marie Kabeya: student number: 300067899
