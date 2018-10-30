@@ -102,6 +102,11 @@ nav a:hover
     position: relative;
 }
 
+.centerstandard
+{
+    text-align: middle;
+}
+
 .centerdiv
 {
     display: flex;
@@ -259,7 +264,7 @@ a
     .navcontainer.responsive .icon {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 2;
     }
     .navcontainer.responsive a {
       float: none;
