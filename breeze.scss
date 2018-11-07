@@ -26,8 +26,6 @@ nav ul
 
 nav ul li
 {
-    list-style-type: none;
-    display: inline-block;
     margin-right: 20px;
     padding-left: 20px;
 }
@@ -251,14 +249,29 @@ a
     display: none;
 }
 
+@media screen and (min-width: 601px)
+{
+    nav ul li
+    {
+        list-style-type: none;
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 600px) 
 {
-    ul, li {
-        margin-left: 0; padding-left: 0;
+    nav li
+    {
+        font-size: 1.5em;
     }
+
+    nav ul li 
+    {
+        margin: 30px;
+    }
+
     .navcontainer a {display: none;}
     .navcontainer a.icon {
-      float: right;
       display: block;
     }
 }
@@ -266,11 +279,6 @@ a
 @media screen and (max-width: 600px) 
 {
     .navcontainer.responsive {position: relative;}
-    .navcontainer.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
     .navcontainer.responsive a {
       float: none;
       display: block;
