@@ -118,6 +118,12 @@ nav a:hover
     width: 250px;
 }
 
+.smallwidth
+{
+    max-width: 100%;
+    width: 650px;
+}
+
 .midwidth
 {
     max-width: 100%; 
@@ -162,6 +168,7 @@ nav a:hover
     padding-right: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin: 10px;
 }
 
 a
@@ -292,45 +299,33 @@ a
 /* PAGE SPECIFIC CSS GOES BELOW HERE */
 
 /* FAQ page-specific CSS */
-.faqpage
+
+.faqcell
 {
-    background-color: #7ce1ec;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px;
 }
- .faqbutton
+
+.faqcontent
 {
-    @extend .impressionable2;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
-    width: 650px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;	
-}
- .faqcontent
-{
-    padding: 10px 18px;
-    max-height: 35px;
-    background-color: white;
-    text-size: 100%;
     text-align: left;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;		
-    
-} 
- .question
-{
-    @extend .faqbutton;
-    	
-    text-align: left;
-    
 }
 
-.impressionable2
+.question
 {
+    @extend .faqcontent;
+    font-weight:bold;
+    font-size:120%;
     background-color: #f0f0f0;
-     box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.1);
-     color: black;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.answer
+{
+    @extend .faqcontent;
+    background-color: white;
 }
