@@ -173,6 +173,16 @@ nav a:hover
     margin: 10px;
 }
 
+.coloredbutton
+{
+    @extend .button;
+}
+
+.coloredbutton p
+{
+    color: #f0f0f0;
+}
+
 a
 {
     text-decoration: none;
@@ -345,6 +355,11 @@ a
     padding-bottom: 5px;
     padding-top: 5px;
     text-align: left;
+}
+
+.faqpad
+{
+    padding: 3px;
 }
 
 .question
