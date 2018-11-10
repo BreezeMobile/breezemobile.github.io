@@ -192,12 +192,9 @@ a
 {
     background-color: #f0f0f0;
     border-radius: 20px;
-
-    box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.1);
-
     color: black;
     text-decoration: none;
-
+    box-shadow: 0px 8px 15px 4px rgba(103, 103, 103, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -207,6 +204,63 @@ a
     margin-right: 10px;
     margin-left: 10px;
     vertical-align: middle;
+}
+
+.titledcell
+{
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.titledcellcontent
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.titledcellheader
+{
+    @extend .titledcellcontent;
+    font-weight:bold;
+    font-size:120%;
+    background-color: #f0f0f0;
+}
+
+.titledcellbody
+{
+    @extend .titledcellcontent;
+    background-color: white;
+}
+
+.pricingcell
+{
+    @extend .titledcell;
+    width: 272px;
+}
+
+.pricingcellheader
+{
+    @extend .titledcellheader;
+    
+}
+
+.pricingcell p, .pricingcell h2
+{
+    text-align: center;
+}
+
+.pricingcellbody
+{
+    @extend .titledcellbody;
+}
+
+.pricingcellbody p, .pricingcell h2
+{
+    text-align: center;
 }
 
 .aligntop
@@ -239,6 +293,7 @@ a
 {
     padding: 30px;
 }
+
 
 /* fonts */
 @font-face 
@@ -275,7 +330,7 @@ a
         display: inline-block;
     }
 
-    .mobileOnly
+    .mobileonly
     {
         display: none;
     }
@@ -318,7 +373,7 @@ a
         font-size: 7em;
     }
 
-    .desktopOnly
+    .desktoponly
     {
         display: none;
     }
@@ -341,37 +396,7 @@ a
 
 /* FAQ page-specific CSS */
 
-.faqcell
-{
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 15px;
-}
-
-.faqcontent
-{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    text-align: left;
-}
-
 .faqpad
 {
     padding: 3px;
-}
-
-.question
-{
-    @extend .faqcontent;
-    font-weight:bold;
-    font-size:120%;
-    background-color: #f0f0f0;
-}
-
-.answer
-{
-    @extend .faqcontent;
-    background-color: white;
 }
